@@ -7,7 +7,7 @@ Summary:	Capture the outcome of Python function calls
 Summary(pl.UTF-8):	Przechwytywanie wyników wywołań funkcji pythonowych
 Name:		python3-outcome
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	MIT or Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/outcome/
