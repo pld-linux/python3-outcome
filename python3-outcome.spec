@@ -6,13 +6,13 @@
 Summary:	Capture the outcome of Python function calls
 Summary(pl.UTF-8):	Przechwytywanie wyników wywołań funkcji pythonowych
 Name:		python3-outcome
-Version:	1.2.0
-Release:	3
+Version:	1.3.0
+Release:	1
 License:	MIT or Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/outcome/
-Source0:	https://files.pythonhosted.org/packages/source/o/outcome/outcome-%{version}.tar.gz
-# Source0-md5:	58612ee4407901985f85ad3869dd83b8
+Source0:	https://files.pythonhosted.org/packages/source/o/outcome/outcome-%{version}.post0.tar.gz
+# Source0-md5:	3a626832ac864c95f6054958d0da3011
 URL:		https://pypi.org/project/outcome/
 BuildRequires:	python3-modules >= 1:3.6
 BuildRequires:	python3-setuptools
@@ -50,7 +50,7 @@ API documentation for Python outcome module.
 Dokumentacja API modułu Pythona outcome.
 
 %prep
-%setup -q -n outcome-%{version}
+%setup -q -n outcome-%{version}.post0
 
 %build
 %py3_build
@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE LICENSE.MIT README.rst
 %{py3_sitescriptdir}/outcome
-%{py3_sitescriptdir}/outcome-%{version}-py*.egg-info
+%{py3_sitescriptdir}/outcome-%{version}*-py*.egg-info
 
 %if %{with doc}
 %files apidocs
