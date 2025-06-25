@@ -14,7 +14,7 @@ Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/o/outcome/outcome-%{version}.post0.tar.gz
 # Source0-md5:	3a626832ac864c95f6054958d0da3011
 URL:		https://pypi.org/project/outcome/
-BuildRequires:	python3-modules >= 1:3.6
+BuildRequires:	python3-modules >= 1:3.7
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-attrs >= 19.2.0
@@ -28,7 +28,7 @@ BuildRequires:	python3-sphinx_rtd_theme
 BuildRequires:	python3-sphinxcontrib-trio
 BuildRequires:	sphinx-pdg-3
 %endif
-Requires:	python3-modules >= 1:3.6
+Requires:	python3-modules >= 1:3.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
